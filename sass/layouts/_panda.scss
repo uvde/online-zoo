@@ -1,0 +1,82 @@
+.panda{
+    background: url(../../assets/images/panda/panda.jpg) no-repeat;
+    background-size: cover;
+
+    @include media-big-mobile{
+        background-size: 120%;
+        background-position: left -54px bottom 0;
+    }
+    @include media-small-mobile{
+        background-position: top;
+    }
+}
+
+.panda__content{
+    display: inline-block;
+    position: relative;
+    // z-index: 1;
+    padding-top: 86px;
+    padding-bottom: 100px;
+    margin-left: auto;
+    // width: 623px;
+    @include media-tablet {
+        padding: 43px 55px 47px 30px;
+        overflow: hidden;
+    }
+    @include media-big-mobile{
+        padding: 48px 0 40px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    @include media-small-mobile{
+        padding: 42px 0 30px 0;
+    }
+    .round{
+        position: absolute;
+        z-index: 0;
+        top: 12px;
+        left: 15px;
+        width: 465px;
+        height: 465px;
+        border-radius: 50%;
+        background: $color-round;
+        @include media-tablet {
+            width: 367px;
+            height: 367px;
+            top: -10px;
+            left: 0px;
+        }
+        @include media-big-mobile{
+            width: 237.6px;
+            height: 237.6px;
+            top: 10px;
+            left: 280px;
+        }
+        @include media-small-mobile{
+            width: 119.09px;
+            height: 119.09px;
+            top: 25px;
+            left: 136px;
+        }
+    }
+}
+
+.panda__button{
+    padding-top: 60px;
+    text-align: center;
+    @include media-big-mobile{
+        text-align: left;
+        padding: 0;
+        margin-top: -10px;
+    }
+    @include media-small-mobile{
+        padding-top: 64px;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+.panda__wrapper{
+    display: flex;
+}

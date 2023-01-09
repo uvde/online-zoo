@@ -1,0 +1,12 @@
+.layout-3-2-grids{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px 30px;
+    @include media-tablet{
+        gap: 82px 25px;
+    }
+
+    @include media-big-mobile{
+        grid-template-columns: 1fr 1fr;  
+    }
+}

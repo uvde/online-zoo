@@ -1,0 +1,38 @@
+.header{
+    background: black;
+    padding: 14px 0;
+    @include media-big-mobile{
+        padding: 2.3px 0 2.7px;
+    }
+}
+
+.header__wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.header__logo{
+    @include media-big-mobile{
+        width: auto;
+        height: auto;
+    }
+    .logo__href{
+        @include media-big-mobile{
+            padding: 0;
+            border: none;
+        }
+        img{
+            @include media-big-mobile{
+                width: 7px;
+                left: 5.4px;
+                bottom: 3px;
+            }
+        }
+        h1{
+            @include media-big-mobile{
+                @include font(1.22rem, 120%);
+            }
+        }
+    }
+}
+

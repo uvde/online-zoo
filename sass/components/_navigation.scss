@@ -1,0 +1,35 @@
+.header__navigation{
+    padding-left: 63px;
+    @include media-big-mobile{
+        display: none;
+    }
+}
+
+.navigation{
+    display: flex;
+    padding-left: 0px;
+    @include font(1.6rem, 140%, 500);
+}
+
+.navigation__link{
+    list-style: none;
+    padding: 0 29px;
+    cursor: pointer;
+}
+
+.navigation__href{
+    color: white;
+    text-decoration: none;
+    @extend %transition;
+}
+
+.navigation__href:hover{
+    color: $color-information;
+}
+
+.navigation__link:first-child{
+    padding-left: 0;
+}
+.navigation__link:last-child{
+    padding-right: 0;
+}

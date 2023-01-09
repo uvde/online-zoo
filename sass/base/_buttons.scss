@@ -1,0 +1,63 @@
+.button{
+    font-family: 'Roboto', Verdana, sans-serif;
+    width: 298px;
+    height: 54px; 
+    background: $color-main;  
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover{
+        background: $color-hover-state;
+    }
+    
+    &_main{
+        border-radius: 25px;
+    }
+
+    &_ruond{
+        height: 62px;
+        width: 62px;
+        border-radius: 50%;
+
+        &:hover{
+            background: $color-activ;
+        }
+
+        .img{
+            width: 18px;
+            height: 10px;
+            margin: auto;
+        }
+
+        &_left{
+            .img{
+                background: url(../../assets/icons/cards/button/left.svg);
+            }
+        }
+        
+        &_right{
+            .img{
+                background: url(../../assets/icons/cards/button/right.svg);
+            }
+        }
+    }
+
+    &_submit{
+        background: $color-comment-background;
+        width: 129px;
+        height: 42px;
+        color: $color-activ;
+        border: 1px solid $color-activ;
+        text-transform: none;
+        font-size: 1.6rem;
+    }
+   
+}
+

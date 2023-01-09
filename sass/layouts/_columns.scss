@@ -1,0 +1,16 @@
+.layout-2-column{
+    display: flex;
+}
+
+.layout-3-column{
+    @include columns(auto);
+    align-items: center;
+}
+
+.layout-4-column{
+    @include columns(auto);
+}
+
+.layout-5-column{
+    @include columns(auto);
+}

@@ -1,0 +1,13 @@
+.wrapper{
+    max-width: $content-width;
+    margin: auto;
+    @include media-tablet {
+        max-width: $content-width-tablet;
+    }
+    @include media-big-mobile{
+        max-width: $content-width-mobile-big;
+    }
+    @include media-small-mobile{
+        max-width: $content-width-mobile-small;
+    }
+}

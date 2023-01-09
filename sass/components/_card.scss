@@ -1,0 +1,87 @@
+.card{
+    position: relative;
+    border-radius: 5px;
+    $border: 1px;
+    background-clip: padding-box; 
+    border: solid $border transparent;
+    cursor: pointer;
+    @extend %transition;
+
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        top: 0; right: 0; bottom: 0; left: 0;
+        margin: -$border; 
+        border-radius: inherit; 
+        background: $color-main;
+        @extend %transition;
+    }
+
+    &:hover{
+        .card__layout-2-column{
+            transform: translate(0, -190px);
+           
+        }
+        .card__animal{
+            transform: translate(0, 31.2px);    
+        }
+        &:before{
+            opacity: 0.5;
+        }
+    }
+
+}
+
+.card__animal{
+    position: relative;
+    border-radius: 4px 4px 0 0;
+    display: block;
+    @extend %transition;
+    @include media-tablet{
+        width: 294px;
+        height: 294px;
+    }
+    @include media-big-mobile{
+        width: 285.24px;
+        height: 285.24px;
+    }
+}
+
+.card__layout-2-column{
+    padding: 8px 12px 14px 16px;
+    border-radius: 0 0 4px 4px;
+    position: relative;
+    background: $color-light;
+    @extend %transition;
+    @include media-big-mobile{
+        padding: 7px 9px 10px 12px;
+    }
+}
+
+.card__food{
+    margin-left: auto;
+
+    @include media-big-mobile{
+        height: 28.84px;
+    }
+}
+
+.card__text{
+   color: $color-card-text;
+}
+
+.card__name{
+    text-transform: uppercase;
+    @include media-big-mobile{
+        @include font(1.25rem, 140%, 600);
+    }
+}
+
+.card__place{
+    @include font(1.5rem, 120%, 300);
+    @include media-big-mobile{
+        @include font(1.17rem, 120%, 300);
+    }
+}
+

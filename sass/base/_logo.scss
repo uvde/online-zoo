@@ -1,0 +1,21 @@
+.logo{
+    height: 52px;
+    width: 82px;    
+}
+
+.logo__href{
+    display: block;
+    position: relative;
+    border-radius: 2px;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+    color: $color-light;
+    padding: 3.75px 0px 0px 0px;
+
+    img{
+        position: absolute;
+        left: 7px;
+        bottom: 5px;
+    }
+}

@@ -1,0 +1,23 @@
+.step__content{
+    width: 168px;
+    height: 168px;  
+    background: $color-light;
+    border: 1px solid $color-information;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-small-mobile{
+        margin: auto;
+    }
+}
+.step__description{
+    max-width: 168px;
+    padding: 30px 0 0;
+    @include media-small-mobile{
+        margin: auto;
+        padding: 10px 0 0;
+    }
+}
+
+
